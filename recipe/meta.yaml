@@ -1,0 +1,26 @@
+{% set version = "21.1.1" %}
+
+package:
+  name: xorg-xserver
+  version: {{ version }}
+
+source:
+  url: https://github.com/freedesktop/xorg-xserver/archive/refs/tags/xorg-server-{{ version }}.tar.gz
+
+requirements:
+  build:
+    - meson
+    - ninja
+  host:
+    - libxkbfile
+    - xorg-xtrans
+    - pixman
+    - libxkbfile
+    - xorg-libx11
+    - libdrm
+    - epoxy
+    - libtool
+    - freetype
+    - xorg-font-util
+    - xorg-xorgproto
+    - xorg-xproto

@@ -15,12 +15,12 @@ requirements:
     - compilers
     - autoconf
     - automake
+    - cmake
     - pkg-config
     - bison
     - libxkbfile
     - xorg-xtrans
     - pixman
-    - libxkbfile
     - xorg-libx11
     - libdrm
     - epoxy
@@ -32,12 +32,13 @@ requirements:
     - xorg-util-macros
     - xorg-libx11
     - xorg-fontsproto
-
+    - xorg-randrproto
+    - xkeyboard-config
+    
   host:
     - libxkbfile
     - xorg-xtrans
     - pixman
-    - libxkbfile
     - xorg-libx11
     - libdrm
     - epoxy
@@ -49,4 +50,5 @@ requirements:
     - xorg-util-macros
     - xorg-libx11
     - xorg-fontsproto
+    - xkeyboard-config
 

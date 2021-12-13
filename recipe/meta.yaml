@@ -27,10 +27,11 @@ requirements:
     - libtool
     - freetype
     - xorg-font-util
-    - xorg-xorgproto
+#    - xorg-xorgproto
     - xorg-xproto
     - xorg-util-macros
     - xorg-libx11
+    - xorg-fontsproto
 
   host:
     - libxkbfile
@@ -43,8 +44,9 @@ requirements:
     - libtool
     - freetype
     - xorg-font-util
-    - xorg-xorgproto
+#    - xorg-xorgproto
     - xorg-xproto
     - xorg-util-macros
     - xorg-libx11
+    - xorg-fontsproto
 

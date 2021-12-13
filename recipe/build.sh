@@ -19,5 +19,16 @@ cd ..
 rm -rf xkbcomp
 
 curl -L https://github.com/freedesktop/libfontenc/archive/refs/tags/libfontenc-1.1.3.tar.gz | tar -zxvf-
-cd libfontenc-1.1.3
+cd libfontenc-libfontenc-1.1.3
 ./autogen.sh --prefix=$PREFIX
+make install
+cd ..
+rm -rf libfontenc-*
+
+curl -L https://github.com/freedesktop/xorg-libXfont/archive/refs/tags/libXfont-1.5.2.tar.gz | tar -zxvf-
+cd xorg-libXfont-libXfont-1.5.2
+./autogen.sh --prefix=$PREFIX
+make install
+cd ..
+# rm -rf xorg-libXfont-libXfont-1.5.2
+

@@ -6,11 +6,32 @@ package:
 
 source:
   url: https://github.com/freedesktop/xorg-xserver/archive/refs/tags/xorg-server-{{ version }}.tar.gz
+  sha256: 915edd49f394283cc587b88a68b5e13e6e2d7f0276edabc9249afb2e22adf634
 
 requirements:
   build:
     - meson
     - ninja
+    - compilers
+    - autoconf
+    - automake
+    - pkg-config
+    - bison
+    - libxkbfile
+    - xorg-xtrans
+    - pixman
+    - libxkbfile
+    - xorg-libx11
+    - libdrm
+    - epoxy
+    - libtool
+    - freetype
+    - xorg-font-util
+    - xorg-xorgproto
+    - xorg-xproto
+    - xorg-util-macros
+    - xorg-libx11
+
   host:
     - libxkbfile
     - xorg-xtrans
@@ -24,3 +45,6 @@ requirements:
     - xorg-font-util
     - xorg-xorgproto
     - xorg-xproto
+    - xorg-util-macros
+    - xorg-libx11
+

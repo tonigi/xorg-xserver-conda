@@ -1,5 +1,8 @@
 #!/bin/bash
 
+mkdir other-depends
+cd other-depends
+
 git clone https://gitlab.freedesktop.org/xorg/lib//libxcvt.git --depth 1 --branch=libxcvt-0.1.0
 cd libxcvt
 meson --prefix $PREFIX --libdir $PREFIX/lib _build

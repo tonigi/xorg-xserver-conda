@@ -59,4 +59,11 @@ requirements:
     - xkeyboard-config
     - libjpeg-turbo
     - libiconv
-    
+
+  run:
+    - libiconv
+    - xorg-libx11
+    - libxkbfile
+    - libjpeg-turbo
+    - xkeyboard-config
+     

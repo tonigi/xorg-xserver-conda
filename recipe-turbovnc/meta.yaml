@@ -21,7 +21,7 @@ requirements:
     - automake
     - cmake
     - pkg-config
-#    - bison
+    - bison
     - libxkbfile
     - xorg-xtrans
 #    - pixman
@@ -66,4 +66,5 @@ requirements:
     - libxkbfile
     - libjpeg-turbo
     - xkeyboard-config
-     
+
+# libdrm, freetype, epoxy     

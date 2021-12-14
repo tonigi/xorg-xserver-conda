@@ -1,0 +1,60 @@
+{% set version = "2.2.6" %}
+
+package:
+  name: turbovnc
+  version: {{ version }}
+
+source:
+  - git_url: https://github.com/TurboVNC/turbovnc
+    git_rev: {{ version }}
+    git_depth: 1
+    folder: turbovnc
+  - git_url: https://gitlab.freedesktop.org/xorg/app/xkbcomp.git 
+    git_rev: xkbcomp-1.4.1
+    git_depth: 1
+    folder: xkbcomp
+
+requirements:
+  build:
+    - meson
+    - ninja
+    - compilers
+    - autoconf
+    - automake
+    - cmake
+    - pkg-config
+    - bison
+    - libxkbfile
+    - xorg-xtrans
+    - pixman
+    - xorg-libx11
+    - libdrm
+    - epoxy
+    - libtool
+    - freetype
+    - xorg-font-util
+#    - xorg-xorgproto
+    - xorg-xproto
+    - xorg-util-macros
+    - xorg-libx11
+    - xorg-fontsproto
+    - xorg-randrproto
+    - xkeyboard-config
+    
+  host:
+    - libxkbfile
+    - xorg-xtrans
+    - pixman
+    - xorg-libx11
+    - libdrm
+    - epoxy
+    - libtool
+    - freetype
+    - xorg-font-util
+#    - xorg-xorgproto
+    - xorg-xproto
+    - xorg-util-macros
+    - xorg-libx11
+    - xorg-fontsproto
+    - xkeyboard-config
+

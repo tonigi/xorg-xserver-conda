@@ -5,28 +5,26 @@ package:
   version: {{ version }}
 
 source:
-  - git_url: https://github.com/TurboVNC/turbovnc
+  - git_url: https://github.com/TurboVNC/turbovnc.git
     git_rev: {{ version }}
-    git_depth: 1
+#    git_depth: 1
     folder: turbovnc
   - git_url: https://gitlab.freedesktop.org/xorg/app/xkbcomp.git 
     git_rev: xkbcomp-1.4.1
-    git_depth: 1
+#    git_depth: 1
     folder: xkbcomp
 
 requirements:
   build:
-    - meson
-    - ninja
     - compilers
     - autoconf
     - automake
     - cmake
     - pkg-config
-    - bison
+#    - bison
     - libxkbfile
     - xorg-xtrans
-    - pixman
+#    - pixman
     - xorg-libx11
     - libdrm
     - epoxy
@@ -40,11 +38,13 @@ requirements:
     - xorg-fontsproto
     - xorg-randrproto
     - xkeyboard-config
+    - libjpeg-turbo
+    - libiconv
     
   host:
     - libxkbfile
     - xorg-xtrans
-    - pixman
+#    - pixman
     - xorg-libx11
     - libdrm
     - epoxy
@@ -57,4 +57,6 @@ requirements:
     - xorg-libx11
     - xorg-fontsproto
     - xkeyboard-config
-
+    - libjpeg-turbo
+    - libiconv
+    

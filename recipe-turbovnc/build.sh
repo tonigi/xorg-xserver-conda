@@ -13,7 +13,8 @@ cmake -DTVNC_BUILDJAVA=OFF -DTVNC_BUILDNATIVE=OFF -DTVNC_NVCONTROL=OFF \
       -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_INSTALL_SYSCONFDIR=$PREFIX/etc  \
       ..
 make -j${CPU_COUNT} install
-chmod og-w $PREFIX/etc/turbovncserver-security.conf
+#chmod og-w $PREFIX/etc/turbovncserver-security.conf
+rm $PREFIX/etc/turbovncserver-security.conf
 cd ../..
 
 cp $PREFIX/share/X11/xkb/rules/base $PREFIX/share/X11/xkb/rules/xorg
